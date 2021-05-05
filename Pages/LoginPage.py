@@ -10,10 +10,11 @@ class LoginPage(GenericPage):
     usernametxtbox = (By.NAME, "username")
     passwordtxtbox = (By.NAME, "password")
     signinbutton = (By.ID, "loginBtn")
+    Englishtext = (By.XPATH , '')
 
 
     def __init__(self,driver):
-        super().__init__(driver)
+        self.driver = driver
 
     def click_drop_down(self):
         self.do_click(self.dropdown)
@@ -29,9 +30,6 @@ class LoginPage(GenericPage):
     def  logo_is_displayed(self):
         self.do_is_visibled(self.Nokialogo)
 
-    def login_1(self, un1, pwd1):
-        self.do_send_keys(self.usernametxtbox, un1)
-        self.do_send_keys(self.passwordtxtbox, pwd1)
 
 
 

@@ -21,3 +21,7 @@ class ReadConfig:
         password = config.get('password')
         return password
 
+    @staticmethod
+    def gettitle():
+        title = config.get('title')
+        return title

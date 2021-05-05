@@ -13,6 +13,7 @@
         <list>
           <option value="Tests.conftest.driver" />
           <option value="Pages.LoginPage.GenericPage" />
+          <option value="Tests.test_Base.Pass" />
         </list>
       </option>
     </inspection_tool>
