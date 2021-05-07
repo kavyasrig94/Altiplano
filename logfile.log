@@ -1,0 +1,12 @@
+2021-05-07 23:50:02,635 :INFO : test_selectLang :***************Testcase1 started******************
+2021-05-07 23:50:02,636 :INFO : test_selectLang :selcting the dropdown
+2021-05-07 23:50:02,770 :INFO : test_selectLang :drop down has been selected
+2021-05-07 23:50:03,704 :INFO : test_selectLang :English language is selected
+2021-05-07 23:50:04,193 :INFO : test_login_Dx :*************Testcase2 started**************
+2021-05-07 23:50:04,204 :INFO : test_login_Dx :Trying to login
+2021-05-07 23:53:46,718 :INFO : test_selectLang :***************Testcase1 started******************
+2021-05-07 23:53:46,718 :INFO : test_selectLang :selcting the dropdown
+2021-05-07 23:53:46,871 :INFO : test_selectLang :drop down has been selected
+2021-05-07 23:53:47,794 :INFO : test_selectLang :English language is selected
+2021-05-07 23:53:48,398 :INFO : test_login_Dx :*************Testcase2 started**************
+2021-05-07 23:53:48,398 :INFO : test_login_Dx :Trying to login

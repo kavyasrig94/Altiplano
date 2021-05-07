@@ -1,9 +1,8 @@
 from selenium.webdriver.common.by import By
+from Pages.HomePage import HomePage
 
-from Pages.GenericPage import GenericPage
 
-
-class LoginPage(GenericPage):
+class LoginPage:
     dropdown = (By.XPATH, "//button[@class='btn btn-light dropdown-toggle dropdown-toggle-split']")
     dropdown_eng = (By.ID, "langEn")
     Nokialogo = (By.XPATH, "//img[@style= 'margin: 50px 0px']")
@@ -17,18 +16,21 @@ class LoginPage(GenericPage):
         self.driver = driver
 
     def click_drop_down(self):
-        self.do_click(self.dropdown)
+        self.driver.find_element(*LoginPage.dropdown).click()
 
     def select_eng_lang(self):
-        self.do_click(self.dropdown_eng)
+        self.driver.find_element(*LoginPage.dropdown_eng).click()
 
     def login(self, un, pwd):
-        self.do_send_keys(self.usernametxtbox, un)
-        self.do_send_keys(self.passwordtxtbox, pwd)
-        self.do_click(self.signinbutton)
+        self.driver.find_element(*LoginPage.usernametxtbox).send_keys(un)
+        self.driver.find_element(*LoginPage.passwordtxtbox).send_keys(pwd)
+        self.driver.find_element(*LoginPage.signinbutton).click()
+        homePage = HomePage(self.driver)
+        return homePage
 
-    def  logo_is_displayed(self):
-        self.do_is_visibled(self.Nokialogo)
+
+    # def  logo_is_displayed(self):
+    #     self.do_is_visibled(self.Nokialogo)
 
 
 
